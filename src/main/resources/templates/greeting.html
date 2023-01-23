@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<nav th:insert="~{fragments/navbar :: navbar}"></nav>
+
+<p th:text="'Bonjour ' + ${nomTemplate} + ' !'"/>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Meteo</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<nav th:insert="~{fragments/navbar :: navbar}"></nav>
+
+<p th:text="'Adresse donnee: ' + ${address}"/>
+<p th:text="'Reponse API: ' + ${answer}"/>
+
+<p th:text="'Forecast : ' + ${forecast}"/>
+</body>
+</html>
